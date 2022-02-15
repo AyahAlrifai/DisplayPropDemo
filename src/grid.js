@@ -1,6 +1,5 @@
 import './grid.css';
 import CodeMirror from '@uiw/react-codemirror';
-import { oneDarkTheme } from '@codemirror/theme-one-dark';
 import {css} from '@codemirror/lang-css';
 
 export const Grid = () => {

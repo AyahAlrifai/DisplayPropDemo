@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Flex} from "./flex.js";
-import {FlexExample} from "./flex_example.js";
 import {Grid} from "./grid.js";
 import {GridExample} from "./grid-example.js";
+import {FlexExample} from "./flex_example.js";
 
 const list=<ul>
 <li><a href="/flex">Flex tutorial</a></li>
 <li><a href="/flexExample">Flex Example</a></li>
 <li><a href="/grid">Grid tutorial</a></li>
 <li><a href="/gridExample">Grid Example</a></li>
-</ul>
+</ul>;
 
 ReactDOM.render(
   <BrowserRouter>

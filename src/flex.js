@@ -1,7 +1,8 @@
 import './flex.css';
 
 export const Flex = () => {
-const style={height:"75px",alignItems:"center",display: "flex"};
+  document.body.style.background="#ffffff";
+  const style={height:"75px",alignItems:"center",display: "flex"};
 
   return (<div style={{display:"flex",justifyContent:"flex-start"}}>
     <div style={{width:"500px"}}>

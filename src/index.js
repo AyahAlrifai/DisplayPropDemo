@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Flex} from "./flex.js";
+import {Grid} from "./grid.js";
+import {GridExample} from "./grid-example.js";
+import {FlexExample} from "./flex_example.js";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+      <Routes>
+        <Route path="/flex" element={<Flex />}></Route>
+        <Route path="/flexExample" element={<FlexExample />}></Route>
+        <Route path="/grid" element={<Grid />}></Route>
+        <Route path="/gridExample" element={<GridExample />}></Route>
+      </Routes>
+    </BrowserRouter>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
